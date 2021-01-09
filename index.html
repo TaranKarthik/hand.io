@@ -1,0 +1,77 @@
+<html>
+
+<head>
+  <title>Hands.io</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <center>
+
+      <h3 class="heading">
+        <span class="heading2" style="font-size: 40px;font-weight: 800;">HAND RECOGNISER</span>
+        <br>
+        <p style="padding: 1% 15%;">Hey, Amigo! This is a website which uses <b>Teachable Machine</b> to try and guess your hand guesture. You can do a victory✌, Bravo 👍 or Cool 👌pose!</p>
+        
+        
+      </h3>
+
+      
+
+      <br><br>
+
+      
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Webcam View</label>
+        <div id="camera">
+
+        </div>
+        <br>
+        <br>
+        <button class="button_Primary" id="CapIMg">Capture Image</button>
+      </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Prediction 1-</label>
+        <br>
+        <p class="emotion_name" id="Emotion1"></p>
+        <p class="emoji" id="Emoji1"></p>
+        <br>
+        <label>Prediction 2-</label>
+        <br>
+        <p class="emotion_name" id="Emotion2"></p>
+        <p class="emoji" id="Emoji2"></p>
+
+      </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Snapshot - </label>
+        <div id="result"></div>
+        <br><br>
+        <button class="button_Primary" onclick="check()">Predict Emotion</button>
+
+
+
+      </div>
+
+    </center>
+
+  </div>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>
